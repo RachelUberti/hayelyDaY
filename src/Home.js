@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-// import { SocialIcon } from 'react-social-icons';
+import { SocialIcon } from 'react-social-icons';
 import { Helmet } from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo from './images/logo.png';
-import heroImage from './images/hero-image.JPG';
-import heroImageCropped from './images/hero-image-cropped.jpg';
+import logo2 from './images/logo2.png';
+import heroImage from './images/homepage/hero-image.JPG';
+import heroImageCropped from './images/homepage/hero-image-cropped.jpg';
+import yogaImage from './images/homepage/yoga.JPG';
+import danceImage from './images/homepage/dance.jpg';
 import './scss/main.scss';
 import './scss/components/_body.scss';
 import './scss/components/_navbar.scss';
@@ -104,9 +108,82 @@ function Home() {
         </div>
       </section>
 
+      {/* <!-- Offerings --> */}
+      <section id="offeringsSection">
+        <div className="offerings">
+          <h1 className="offerings__heading">Offerings</h1>
+          <hr className="offerings__line" />
+          <div className="offerings__grid">
+            <div className="offerings__grid-item">
+              <picture >
+                <source srcSet={yogaImage} />
+                <img className="offerings__image" src={yogaImage} alt="A person doing a yoga pose, legs crossed on the floor and holding hands together in prayer position front of head" />
+              </picture>
+              <h2>Yoga</h2>
+              <p className="offerings__grid-para">
+                I offer yoga classes to all ages, levels and abilities. Range of
+                styles and practices. Classes can be tailored and blended as
+                needed.
+              </p>
+              <p className="offerings__grid-para">Private 1:1 Sessions</p>
+              <p className="offerings__grid-para">Private Groups</p>
+              <a href="yoga.html"><button className="offerings__grid-button">Find out more</button></a>
+            </div>
+            <div className="offerings__grid-item">
+              <picture >
+                <source srcSet={danceImage} />
+                <img className="offerings__image" src={danceImage} alt="Top half of a person, of their back, with hands together in prayer but arms are straight up to towards the sky" />
+              </picture>
+              <h2>Dance</h2>
+              <p className="offerings__grid-para">
+                I offer dance classes, open to all ages and abilities. No prior
+                dance experience needed or partner required. Classes can be
+                tailored at your request.
+              </p>
+              <p className="offerings__grid-para">Private 1:1 Sessions</p>
+              <p className="offerings__grid-para">Private Groups</p>
+              <a href="dance.html"><button className="offerings__grid-button">Find out more</button></a>
+            </div>
+          </div>
+          <div id="enquiry" className="offerings__message">
+            <a href="contact.html"><button className="offerings__message-button">
+              Click here to submit an enquiry or connect below
+              <FontAwesomeIcon icon={["fas", "fa-feather-alt"]} />
+            </button></a>
+          </div>
+        </div>
+      </section>
+
+
+      {/* <!-- Footer --> */}
+      <footer>
+        <div className="container-fluid px-0">
+          <div className="row mx-0">
+            <div className="footer">
+              <div className="footer__text">
+                <div className="footer__logo" >
+                  <a href="/">
+                    <img src={logo2} alt="Hayley's Logo" />
+                  </a>
+                </div>
+                <h1 className="footer__heading">Connect</h1>
+                <div className="footer__line-div" >
+                  <hr className="footer__line" />
+                </div>
+                <p className="footer__hours">Hayley Dance and Yoga</p>
+                <div className="footer__socials">
+                  <SocialIcon className="footer__socials-button" url="https://www.facebook.com/threecrownshotel" network="facebook" bgColor="#403F48" fgColor="#ebe5db" color="currentColor" style={{ height: 65, width: 65 }} />
+                  <SocialIcon className="footer__socials-button" url="https://www.instagram.com/threecrownshotel/?hl=en" network="instagram" bgColor="#403F48" fgColor="#ebe5db" style={{ height: 65, width: 65 }} />
+                  <SocialIcon className="footer__socials-button" url="https://www.facebook.com/threecrownshotel" network="facebook" bgColor="#403F48" fgColor="#ebe5db" color="currentColor" style={{ height: 65, width: 65 }} />
+                </div>
+                <p className="footer__credit">Design and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
-
   );
 }
 

@@ -1,0 +1,96 @@
+@import '../abstracts/fonts';
+@import '../abstracts/colours';
+
+.offerings {
+    background-color: $white;
+
+    &__heading {
+        @include font-satisfy-heading;
+        line-height: normal;
+        margin-top: 70px;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 40px;
+            margin-top: 40px;
+        }
+    }
+
+    &__line {
+        border-bottom: 2px solid $black;
+        margin: auto;
+        width: 80px;
+        opacity: 1;
+      }
+
+    &__image {
+        width: 350px;
+        border-radius: 50%;
+        padding-bottom: 15px;
+
+        @media only screen and (max-width: 450px) {
+            width: 170px;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-column-gap: 150px;
+        align-items: center;
+        margin: 50px 155px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+            margin: 50px 50px 50px;
+        }
+    }
+
+    &__grid-item {
+        text-align: center;
+        @include font-raleway;
+    }
+
+    &__grid-para {
+        font-size: 25px;
+        padding: 15px 0px;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 15px;
+        }
+    }
+
+    &__grid-button {
+        @include font-satisfy-text;
+        font-size: 30px;
+        color: $white;
+        background-color: $olive;
+        padding: 15px 25px;
+        margin: 15px 0px;
+        border: none;
+        border-radius: 8px;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 20px;
+            padding: 8px 15px;
+            margin: 0px 0px 50px 0px;
+        }
+    }
+
+    &__message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $beige;
+        margin-bottom: 50px;
+
+    }
+
+    &__message-button {
+        @include font-raleway;
+        font-size: 30px;
+        border: none;
+        background: none;
+        padding: 12px;
+    }
+}

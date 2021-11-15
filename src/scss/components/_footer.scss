@@ -1,0 +1,85 @@
+@import '../abstracts/fonts';
+@import '../abstracts/colours';
+
+.footer {
+  background-color: $grey;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__logo {
+    padding-top: 80px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__heading {
+    @include font-satisfy-heading;
+    color: $beige;
+    margin-bottom: 24px;
+  }
+  &__line-div {
+    margin-bottom: 24px;
+  }
+
+  &__line {
+    border-bottom: 3px solid $beige;
+    box-align: center;
+    width: 80px;
+    margin: auto;
+    opacity: 1;
+  }
+
+  &__hours {
+    @include font-satisfy-text;
+    color: $beige;
+    font-size: 22px;
+    margin-bottom: 6px;
+
+    @media screen and (max-width: 450px) {
+      font-size: 16px;
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  &__socials-button {
+    border: 1px solid $beige;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+   &__credit {
+    @include font-raleway;
+    font-size: 14px;
+    color:$olive;
+    padding-top: 60px;
+
+    @media screen and (max-width: 450px) {
+      font-size: 9px;
+    }
+    @media screen and (max-width: 1024px) {
+      margin-top: 50px;
+    }
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $olive;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: $olive;
+  }
+}
+

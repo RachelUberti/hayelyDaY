@@ -44,4 +44,10 @@
   &__paraHeading {
     @include font-satisfy-text;
   }
+
+  &__retreats {
+    background-color: $beige;
+    border: none;
+    color: $olive;
+  }
 }
