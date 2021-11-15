@@ -51,13 +51,12 @@
 
   &__logo-text {
     @include font-raleway;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
   }
 
   &__button {
     @include font-raleway;
-    font-size: 30px;
     border: none;
     background: transparent;
     margin: 0px 20px;

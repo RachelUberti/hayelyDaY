@@ -10,7 +10,7 @@
         margin-top: 70px;
 
         @media only screen and (max-width: 450px) {
-            font-size: 30px;
+            font-size: 24px;
             margin-top: 40px;
         }
     }
@@ -52,7 +52,6 @@
     }
 
     &__grid-para {
-        font-size: 25px;
         padding: 15px 0px;
 
         @media only screen and (max-width: 450px) {
@@ -65,7 +64,6 @@
 
     &__grid-button {
         @include font-satisfy-text;
-        font-size: 30px;
         color: $white;
         background-color: $olive;
         padding: 15px 25px;
@@ -91,12 +89,10 @@
             margin-bottom: 50px;
 
         }
-
     }
 
     &__message-button {
         @include font-raleway;
-        font-size: 30px;
         border: none;
         background: none;
         padding: 12px;
