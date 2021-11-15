@@ -13,7 +13,10 @@ import './scss/main.scss';
 import './scss/components/_body.scss';
 import './scss/components/_navbar.scss';
 import './scss/components/_about.scss';
+import './scss/components/_footer.scss';
+import './scss/components/_offerings.scss';
 import './scss/components/_hero-image.scss';
+
 
 
 function Home() {

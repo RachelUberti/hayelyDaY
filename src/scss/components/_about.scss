@@ -24,8 +24,9 @@
     @include font-satisfy-heading;
     margin-bottom: 24px;
 
-    @media screen and (max-width: 560px) {
+    @media screen and (max-width: 450px) {
       margin-bottom: 18px;
+      font-size: 20px;
     }
   }
 
@@ -40,8 +41,8 @@
     @include font-raleway;
     margin-top: 24px;
     
-    @media screen and (max-width: 560px) {
-      font-size: 14px;
+    @media screen and (max-width: 450px) {
+      font-size: 16px;
       line-height: 24px;
     }
   }
@@ -49,8 +50,8 @@
   &__paraHeading {
     @include font-satisfy-text;
 
-    @media screen and (max-width: 560px) {
-      font-size: 20px;
+    @media screen and (max-width: 450px) {
+      font-size: 18px;
     }
   }
 

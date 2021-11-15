@@ -10,7 +10,7 @@
         margin-top: 70px;
 
         @media only screen and (max-width: 450px) {
-            font-size: 24px;
+            font-size: 18px;
             margin-top: 40px;
         }
     }
@@ -48,17 +48,16 @@
 
     &__grid-item {
         text-align: center;
-        @include font-raleway;
     }
 
     &__grid-para {
+        @include font-raleway;
         padding: 15px 0px;
 
         @media only screen and (max-width: 450px) {
-            font-size: 14px;
+            font-size: 18px;
             line-height: 24px;
             padding: 0px;
-
         }
     }
 
@@ -72,7 +71,7 @@
         border-radius: 8px;
 
         @media only screen and (max-width: 450px) {
-            font-size: 20px;
+            font-size: 18px;
             padding: 8px 15px;
             margin: 0px 0px 50px 0px;
         }
@@ -87,7 +86,6 @@
 
         @media only screen and (max-width: 450px) {
             margin-bottom: 50px;
-
         }
     }
 
@@ -99,7 +97,7 @@
 
         @media only screen and (max-width: 450px) {
             padding: 0px;
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 }
