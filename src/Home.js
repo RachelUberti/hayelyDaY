@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
 import { Helmet } from 'react-helmet';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import * as FaIcons from "react-icons/fa";
 import logo from './images/logo.png';
 import logo2 from './images/logo2.png';
 import heroImage from './images/homepage/hero-image.JPG';
@@ -39,6 +39,7 @@ function Home() {
                 <a className="navbar__logo" href="/">
                   <img src={logo} alt="Hayley's Logo" />
                 </a>
+                <p className='navbar__logo-text'>Hayley Dance & Yoga</p>
               </div>
               <div>
                 <button className='navbar__button'>
@@ -75,7 +76,7 @@ function Home() {
                 <h1 className="about__heading">About</h1>
                 <hr className="about__line" />
                 <p className="about__para">
-                  <span className="about__paraHeading">Hello, my name is Hayley Uberti.</span>
+                  <span className="about__paraHeading">Hello, my name is Hayley Uberti. </span>
                   I am a skilful and a wholehearted dance and yoga teacher with a
                   background in performance. As a professional dancer with two
                   decades of dance training and teaching, I already had a keen
@@ -142,13 +143,13 @@ function Home() {
               </p>
               <p className="offerings__grid-para">Private 1:1 Sessions</p>
               <p className="offerings__grid-para">Private Groups</p>
-              <a href="dance.html"><button className="offerings__grid-button">Find out more</button></a>
+              <a href="dance.html"><button id="offerings-second-button" className="offerings__grid-button">Find out more</button></a>
             </div>
           </div>
           <div id="enquiry" className="offerings__message">
             <a href="contact.html"><button className="offerings__message-button">
               Click here to submit an enquiry or connect below
-              <FontAwesomeIcon icon={["fas", "fa-feather-alt"]} />
+              <FaIcons.FaFeatherAlt />
             </button></a>
           </div>
         </div>
@@ -163,7 +164,7 @@ function Home() {
               <div className="footer__text">
                 <div className="footer__logo" >
                   <a href="/">
-                    <img src={logo2} alt="Hayley's Logo" />
+                    <img className="footer__logo-image" src={logo2} alt="Hayley's Logo" />
                   </a>
                 </div>
                 <h1 className="footer__heading">Connect</h1>
@@ -172,11 +173,11 @@ function Home() {
                 </div>
                 <p className="footer__hours">Hayley Dance and Yoga</p>
                 <div className="footer__socials">
-                  <SocialIcon className="footer__socials-button" url="https://www.facebook.com/threecrownshotel" network="facebook" bgColor="#403F48" fgColor="#ebe5db" color="currentColor" style={{ height: 65, width: 65 }} />
-                  <SocialIcon className="footer__socials-button" url="https://www.instagram.com/threecrownshotel/?hl=en" network="instagram" bgColor="#403F48" fgColor="#ebe5db" style={{ height: 65, width: 65 }} />
-                  <SocialIcon className="footer__socials-button" url="https://www.facebook.com/threecrownshotel" network="facebook" bgColor="#403F48" fgColor="#ebe5db" color="currentColor" style={{ height: 65, width: 65 }} />
+                  <SocialIcon className="footer__socials-button" url="https://www.facebook.com/profile.php?id=100012157428974" network="facebook" bgColor="#403F48" fgColor="#ebe5db" color="currentColor" style={{ height: 65, width: 65 }} />
+                  <SocialIcon className="footer__socials-button" url="https://www.instagram.com/threecrownshotel/?hl=en" network="linkedin" bgColor="#403F48" fgColor="#ebe5db" style={{ height: 65, width: 65 }} />
+                  <SocialIcon className="footer__socials-button" url="https://www.instagram.com/hayleydanceandyoga/?hl=en" network="instagram" bgColor="#403F48" fgColor="#ebe5db" color="currentColor" style={{ height: 65, width: 65 }} />
                 </div>
-                <p className="footer__credit">Design and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a>
+                <p className="footer__credit">Website design and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a>
                 </p>
               </div>
             </div>

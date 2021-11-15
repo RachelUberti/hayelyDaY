@@ -10,19 +10,34 @@
   justify-content: center;
 
   &__logo {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 24px;
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: 450px) {
+      height: 80%;
+      padding-bottom: 14px;
+    }
   }
 
   &__heading {
     @include font-satisfy-heading;
     color: $beige;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 450px) {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
   }
+
   &__line-div {
     margin-bottom: 24px;
+
+    @media screen and (max-width: 450px) {
+      margin-bottom: 14px;
+    }
   }
 
   &__line {
@@ -53,27 +68,33 @@
   &__socials-button {
     border: 1px solid $beige;
     border-radius: 50%;
-    margin: 20px;
+    margin: 22px;
+
+    @media screen and (max-width: 450px) {
+      margin: 12px;
+
+
+    }
   }
 
    &__credit {
     @include font-raleway;
     font-size: 14px;
-    color:$olive;
-    padding-top: 60px;
+    color: rgb(186, 103, 31);
+    padding-top: 20px;
 
     @media screen and (max-width: 450px) {
       font-size: 9px;
     }
     @media screen and (max-width: 1024px) {
-      margin-top: 50px;
+      margin-top: 20px;
     }
   }
 
   a:link,
   a:visited {
     text-decoration: none;
-    color: $olive;
+    color: rgb(186, 103, 31);
   }
 
   a:hover,
