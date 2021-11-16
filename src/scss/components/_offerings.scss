@@ -46,6 +46,14 @@
         }
     }
 
+    &__sec-headings {
+        @include font-satisfy-heading;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 20px;
+        }
+    }
+
     &__grid-item {
         text-align: center;
     }
@@ -55,7 +63,7 @@
         padding: 15px 0px;
 
         @media only screen and (max-width: 450px) {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 24px;
             padding: 0px;
         }
@@ -78,6 +86,7 @@
     }
 
     &__message {
+        @include font-raleway;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,6 +95,8 @@
 
         @media only screen and (max-width: 450px) {
             margin-bottom: 50px;
+            font-size: 16px;
+
         }
     }
 

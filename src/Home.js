@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
 import { Helmet } from 'react-helmet';
 import * as FaIcons from "react-icons/fa";
-import logo from './images/logo.png';
-import logo2 from './images/logo2.png';
+// import logo from './images/logo.png';
+// import logo2 from './images/logo2.png';
 import heroImage from './images/homepage/hero-image.JPG';
 import heroImageCropped from './images/homepage/hero-image-cropped.jpg';
+import hayleyImage from './images/homepage/hayley.jpg';
+import hayleyImageCropped from './images/homepage/hayleyCropped.jpg';
 import yogaImage from './images/homepage/yoga.JPG';
 import danceImage from './images/homepage/dance.jpg';
 import './scss/main.scss';
@@ -39,10 +41,12 @@ function Home() {
           <div className='navbar__main-menu'>
             <div className='navbar__sub-main-menu'>
               <div>
-                <a className="navbar__logo" href="/">
-                  <img src={logo} alt="Hayley's Logo" />
-                </a>
-                <p className='navbar__logo-text'>Hayley Dance & Yoga</p>
+                {/* <a className="navbar__logo" href="/">
+                  <img src={logo} alt=
+                  "Hayley's Logo" />
+                </a> */}
+                <p className='navbar__logo-text'><FaIcons.FaAtlassian className='logo' />
+                  Hayley Dance & Yoga</p>
               </div>
               <div>
                 <button className='navbar__button'>
@@ -74,8 +78,8 @@ function Home() {
       <section>
         <div className="container-fluid px-0">
           <div className="row mx-0">
-            <div className="about">
-              <div className="about__text">
+            <div className="about col-lg-8 px-0">
+              <div className="about__text ">
                 <h1 className="about__heading">About</h1>
                 <hr className="about__line" />
                 <p className="about__para">
@@ -108,6 +112,13 @@ function Home() {
                 </p>
               </div>
             </div>
+            <div className="about__image col-lg-4 px-0">
+              <picture >
+                <source media="(max-width:450px)" srcSet={hayleyImageCropped} />
+                <source srcSet={hayleyImage} />
+                <img className="about__image" src={hayleyImage} alt="A person doing a yoga pose, legs crossed on the floor and holding hands together in prayer position front of head" />
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -123,7 +134,7 @@ function Home() {
                 <source srcSet={yogaImage} />
                 <img className="offerings__image" src={yogaImage} alt="A person doing a yoga pose, legs crossed on the floor and holding hands together in prayer position front of head" />
               </picture>
-              <h2>Yoga</h2>
+              <h2 className="offerings__sec-headings">Yoga</h2>
               <p className="offerings__grid-para">
                 I offer yoga classes to all ages, levels and abilities. Range of
                 styles and practices. Classes can be tailored and blended as
@@ -138,7 +149,7 @@ function Home() {
                 <source srcSet={danceImage} />
                 <img className="offerings__image" src={danceImage} alt="Top half of a person, of their back, with hands together in prayer but arms are straight up to towards the sky" />
               </picture>
-              <h2>Dance</h2>
+              <h2 className="offerings__sec-headings">Dance</h2>
               <p className="offerings__grid-para">
                 I offer dance classes, open to all ages and abilities. No prior
                 dance experience needed or partner required. Classes can be
@@ -166,9 +177,10 @@ function Home() {
             <div className="footer">
               <div className="footer__text">
                 <div className="footer__logo" >
-                  <a href="/">
-                    <img className="footer__logo-image" src={logo2} alt="Hayley's Logo" />
-                  </a>
+                  {/* <a href="/">
+                    <img src={logo2} alt="Hayley's Logo" />
+                  </a> */}
+                  <FaIcons.FaAtlassian className="logo-footer" />
                 </div>
                 <h1 className="footer__heading">Connect</h1>
                 <div className="footer__line-div" >
@@ -180,14 +192,20 @@ function Home() {
                   <SocialIcon className="footer__socials-button" url="https://www.instagram.com/threecrownshotel/?hl=en" network="linkedin" bgColor="#403F48" fgColor="#ebe5db" style={{ height: 65, width: 65 }} />
                   <SocialIcon className="footer__socials-button" url="https://www.instagram.com/hayleydanceandyoga/?hl=en" network="instagram" bgColor="#403F48" fgColor="#ebe5db" color="currentColor" style={{ height: 65, width: 65 }} />
                 </div>
-                <p className="footer__credit">Website design and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a>
+                <div class="footer__links">
+                  <a href="index.html"><button class="footer__link-item">Homepage</button></a>
+                  <a href="#about"><button class="footer__link-item">About</button></a>
+                  <a href="#offeringsSection"><button class="footer__link-item">Offerings</button></a>
+                  <a href="#enquiry"><button class="footer__link-item">Connect</button></a>
+                </div>
+                <p className="footer__credit">Website design and engineering by <a className="footer__credit-link" href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer >
+    </div >
   );
 }
 

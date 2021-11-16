@@ -72,16 +72,32 @@
 
     @media screen and (max-width: 450px) {
       margin: 12px;
-
-
     }
+  }
+
+  &__link-item {
+    @include font-raleway;
+    font-size: 16px;
+    border: none;
+    background: none;
+    color: $darkGreen;
+    margin: 0px 15px;
+
+    @media only screen and (max-width: 450px) {
+      margin: 0px 6px;
+      font-size: 14px;
+  }
+  }
+
+  &__link-item:hover, &__link-item:active {
+    color: $beige;
   }
 
    &__credit {
     @include font-raleway;
     font-size: 12px;
     color: rgb(186, 103, 31);
-    padding-top: 20px;
+    padding-top: 40px;
 
     @media screen and (max-width: 450px) {
       font-size: 9px;
@@ -91,16 +107,34 @@
     }
   }
 
-  a:link,
-  a:visited {
-    text-decoration: none;
+
+  &__credit-link:visited,  &__credit-link:link {
+  text-decoration: none;
+  color: rgb(186, 103, 31);
+  }
+  &__credit-link:hover, &__credit-link:active {
+    text-decoration: underline;
     color: rgb(186, 103, 31);
   }
+  // a:link,
+  // a:visited {
+  //   text-decoration: none;
+  //   color: rgb(186, 103, 31);
+  // }
 
-  a:hover,
-  a:active {
-    text-decoration: none;
-    color: $olive;
-  }
+  // a:hover,
+  // a:active {
+  //   text-decoration: none;
+  //   color: $olive;
+  // }
 }
 
+.logo-footer {
+  color: $beige;
+  width: 50px; 
+  height: 50px;
+
+  @media only screen and (max-width: 450px) {
+      height: 75%;
+  }
+}
