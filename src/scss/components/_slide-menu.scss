@@ -11,7 +11,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: $white;
+  background: $grey;
 }
 
 // Position/shape of burger icon bars */
@@ -20,9 +20,9 @@
   width: 45px;
   height: 26px;
   right: 28px;
-  top: 20px;
-  float: left;
-  left: 10px;
+  top: 27px;
+  // float: left;
+  right: 10px;
 }
 
 .bm-menu {
@@ -56,7 +56,7 @@ padding: 2.5em 1.5em 0;
 }
 
 .slide-menu__button {
-  @include font-raleway;
+  @include font-satisfy-text;
   color:$white;
   margin-top: 30px;
   width: 200px;
@@ -67,10 +67,9 @@ padding: 2.5em 1.5em 0;
 
 }
 
-.slide-menu__button:hover {
-  background: $white;
-  color: $grey;
-  border: 3px solid $grey;
+.slide-menu__button:hover, .slide-menu__button:active {
+  background: $darkGreen;
+  outline: none !important;
 }
 
 .bm-item {
@@ -83,19 +82,20 @@ padding: 2.5em 1.5em 0;
   margin: 22px;
 
   @media screen and (max-width: 450px) {
-    margin: 50px 12px;
+    margin: 80px 12px 30px;
   }
 }
 .slide-menu__logo-text {
-  @include font-satisfy-text;
-
+  @include font-raleway;
+font-size: 14px;
 }
-// a.bm-item:active, a.bm-item:focus {
+
+// .bm-item:active, .bm-item:focus {
 //  outline: none !important;
 // }
 
-// a {
-//   color: transparent; 
-// }
+a {
+  color: transparent; 
+}
 
 

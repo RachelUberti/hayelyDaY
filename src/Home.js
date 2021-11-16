@@ -99,7 +99,7 @@ function Home() {
                   giving me the confidence and knowledge teach in various formats and run
                   <span
                   ><a href="retreats.html"
-                  ><button className="about__retreats">retreats</button></a>
+                  ><button className="about__retreats">Retreats</button></a>
                   </span>around the world. I have been teaching passionately ever since
                   and continue my dedicated daily self-practice and
                   skills development.
@@ -131,7 +131,7 @@ function Home() {
               <h2 className="offerings__sec-headings">Yoga</h2>
               <p className="offerings__grid-para">
                 I offer yoga classes to all ages, levels and abilities. Range of
-                styles and practices. Classes can be tailored and blended as
+                styles and practices, and no prior experience required. Classes can be tailored and blended as
                 needed.
               </p>
               <p className="offerings__grid-para">Private 1:1 Sessions</p>

@@ -18,9 +18,9 @@ function SlideMenu() {
         <button className='slide-menu__button'>Connect</button>
       </a>
       <div className="footer__socials">
-        <SocialIcon className="socials-button" url="https://www.facebook.com/profile.php?id=100012157428974" network="facebook" bgColor="#596C68" fgColor="#ffffff" color="currentColor" style={{ height: 65, width: 65 }} />
-        <SocialIcon className="socials-button" url="https://www.instagram.com/threecrownshotel/?hl=en" network="linkedin" bgColor="#596C68" fgColor="#ffffff" style={{ height: 65, width: 65 }} />
-        <SocialIcon className="socials-button" url="https://www.instagram.com/hayleydanceandyoga/?hl=en" network="instagram" bgColor="#596C68" fgColor="#ffffff" color="currentColor" style={{ height: 65, width: 65 }} />
+        <SocialIcon className="socials-button" url="https://www.facebook.com/profile.php?id=100012157428974" network="facebook" bgColor="#95A792" fgColor="#ffffff" color="currentColor" style={{ height: 65, width: 65 }} />
+        <SocialIcon className="socials-button" url="https://www.instagram.com/threecrownshotel/?hl=en" network="linkedin" bgColor="#95A792" fgColor="#ffffff" style={{ height: 65, width: 65 }} />
+        <SocialIcon className="socials-button" url="https://www.instagram.com/hayleydanceandyoga/?hl=en" network="instagram" bgColor="#95A792" fgColor="#ffffff" color="currentColor" style={{ height: 65, width: 65 }} />
       </div>
       <div>
         <p className='slide-menu__logo-text'><FaIcons.FaAtlassian className='logo' />
