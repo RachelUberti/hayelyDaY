@@ -18,6 +18,7 @@ import './scss/components/_about.scss';
 import './scss/components/_footer.scss';
 import './scss/components/_offerings.scss';
 import './scss/components/_hero-image.scss';
+import SlideMenu from "./SlideMenu";
 
 
 
@@ -31,9 +32,9 @@ function Home() {
           content="Hayley Dance and Yoga business"
         />
       </Helmet>
-      {/* <div className='burger-menu'>
+      <div className='burger-menu'>
         <SlideMenu />
-      </div> */}
+      </div>
 
       <header>
         {/* <!-- Nav bar  --> */}
@@ -41,10 +42,6 @@ function Home() {
           <div className='navbar__main-menu'>
             <div className='navbar__sub-main-menu'>
               <div>
-                {/* <a className="navbar__logo" href="/">
-                  <img src={logo} alt=
-                  "Hayley's Logo" />
-                </a> */}
                 <p className='navbar__logo-text'><FaIcons.FaAtlassian className='logo' />
                   Hayley Dance & Yoga</p>
               </div>
@@ -87,8 +84,8 @@ function Home() {
                   I am a skilful and a wholehearted dance and yoga teacher with a
                   background in performance. As a professional dancer with two
                   decades of dance training and teaching, I already had a keen
-                  interest in how the body moved and ways to keep fit and healthy
-                  but unfortuntely with so much demand on the body, my dancing
+                  interest in how the body moved and ways to keep fit and healthy.
+                  Unfortuntely, with so much demand on the body, my dancing
                   career came to a halt from injury eight years ago. Turning to
                   yoga for my own healing, it not only benefited my physical body
                   but also greatly supported my journey emotionally.
@@ -99,22 +96,19 @@ function Home() {
                   eventually led me to complete my Hatha Yoga teacher training in
                   India where I was privileged to receive private tuition and
                   mentoring from a wise, traditional and accomplished yoga master,
-                  giving me the confidence and knowledge to open my own bespoke
-                  studio in Bath, England and running
+                  giving me the confidence and knowledge teach in various formats and run
                   <span
                   ><a href="retreats.html"
-                  ><button className="about__retreats">Retreats</button></a
-                    >
-                  </span>
-                  around the world. I have been teaching passionately ever since
-                  and continue my dedicated daily self-practice and professional
+                  ><button className="about__retreats">retreats</button></a>
+                  </span>around the world. I have been teaching passionately ever since
+                  and continue my dedicated daily self-practice and
                   skills development.
                 </p>
               </div>
             </div>
             <div className="about__image col-lg-4 px-0">
               <picture >
-                <source media="(max-width:450px)" srcSet={hayleyImageCropped} />
+                <source media="(max-width:768px)" srcSet={hayleyImageCropped} />
                 <source srcSet={hayleyImage} />
                 <img className="about__image" src={hayleyImage} alt="A person doing a yoga pose, legs crossed on the floor and holding hands together in prayer position front of head" />
               </picture>

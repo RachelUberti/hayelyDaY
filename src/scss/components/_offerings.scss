@@ -10,13 +10,13 @@
         margin-top: 70px;
 
         @media only screen and (max-width: 450px) {
-            font-size: 18px;
+            font-size: 28px;
             margin-top: 40px;
         }
     }
 
     &__line {
-        border-bottom: 2px solid $black;
+        border-bottom: 1px solid $black;
         margin: auto;
         width: 80px;
         opacity: 1;
@@ -50,7 +50,7 @@
         @include font-satisfy-heading;
 
         @media only screen and (max-width: 450px) {
-            font-size: 20px;
+            font-size: 28px;
         }
     }
 
@@ -60,7 +60,7 @@
 
     &__grid-para {
         @include font-raleway;
-        padding: 15px 0px;
+        padding: 10px 0px;
 
         @media only screen and (max-width: 450px) {
             font-size: 16px;

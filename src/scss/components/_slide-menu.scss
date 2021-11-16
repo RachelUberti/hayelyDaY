@@ -1,0 +1,101 @@
+@import '../abstracts/fonts';
+@import '../abstracts/colours';
+
+.burger-menu {
+  float: left;
+
+  @media only screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $white;
+}
+
+// Position/shape of burger icon bars */
+.bm-burger-button {
+  position: absolute;
+  width: 45px;
+  height: 26px;
+  right: 28px;
+  top: 20px;
+  float: left;
+  left: 10px;
+}
+
+.bm-menu {
+display: flex;
+justify-content: space-around;
+background: $olive;
+padding: 2.5em 1.5em 0;
+}
+
+.bm-item {
+  display: flex !important;
+  justify-content: center;
+}
+
+.bm-menu-wrap {
+  width: 100% !important;
+  }
+
+.bm-burger-bars {
+  height: 8% !important;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+  background: $white;
+  height: 24px !important;
+}
+
+.bm-cross-button {
+  right: 18px !important;
+  top: 18px !important;
+}
+
+.slide-menu__button {
+  @include font-raleway;
+  color:$white;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  border: 3px solid $white;
+  border-radius: 8px;
+
+}
+
+.slide-menu__button:hover {
+  background: $white;
+  color: $grey;
+  border: 3px solid $grey;
+}
+
+.bm-item {
+  text-decoration: none;
+}
+
+.socials-button {
+  border: 3px solid $white;
+  border-radius: 50%;
+  margin: 22px;
+
+  @media screen and (max-width: 450px) {
+    margin: 50px 12px;
+  }
+}
+.slide-menu__logo-text {
+  @include font-satisfy-text;
+
+}
+// a.bm-item:active, a.bm-item:focus {
+//  outline: none !important;
+// }
+
+// a {
+//   color: transparent; 
+// }
+
+
