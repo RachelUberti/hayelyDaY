@@ -82,7 +82,7 @@ padding: 2.5em 1.5em 0;
   margin: 22px;
 
   @media screen and (max-width: 450px) {
-    margin: 80px 12px 30px;
+    margin: 100px 12px 30px;
   }
 }
 .slide-menu__logo-text {
@@ -90,9 +90,9 @@ padding: 2.5em 1.5em 0;
 font-size: 14px;
 }
 
-// .bm-item:active, .bm-item:focus {
-//  outline: none !important;
-// }
+.bm-item:active, .bm-item:focus {
+ outline: none !important;
+}
 
 a {
   color: transparent; 

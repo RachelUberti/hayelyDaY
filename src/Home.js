@@ -75,7 +75,7 @@ function Home() {
       <section>
         <div className="container-fluid px-0">
           <div className="row mx-0">
-            <div className="about col-lg-8 px-0">
+            <div className="about col-sm-8 px-0">
               <div className="about__text ">
                 <h1 className="about__heading">About</h1>
                 <hr className="about__line" />
@@ -106,7 +106,7 @@ function Home() {
                 </p>
               </div>
             </div>
-            <div className="about__image col-lg-4 px-0">
+            <div className="about__image col-sm-4 px-0">
               <picture >
                 <source media="(max-width:768px)" srcSet={hayleyImageCropped} />
                 <source srcSet={hayleyImage} />
