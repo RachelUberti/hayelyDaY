@@ -1,0 +1,49 @@
+@import '../abstracts/fonts';
+@import '../abstracts/colours';
+
+.socials {
+    background-color: $white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 3em;
+    margin: 50px 0px;
+
+    @media screen and (max-width: 560px) {
+        padding: 1em;
+    }
+
+    &__heading {
+        @include font-satisfy-heading;
+        margin-bottom: 25px;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__para {
+        @include font-raleway;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 15px;
+            line-height: normal;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $olive;
+        }
+    }
+
+    &__socials {
+        display: flex;
+    }
+
+    &__image {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+    }
+}

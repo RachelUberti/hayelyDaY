@@ -85,6 +85,10 @@
         }
     }
 
+    &__grid-button:hover {
+        background-color: $lightOlive;
+    }
+
     &__message {
         @include font-raleway;
         display: flex;

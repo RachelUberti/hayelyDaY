@@ -1,0 +1,17 @@
+@import '../abstracts/fonts';
+@import '../abstracts/colours';
+
+.yogaOfferings {
+    background-color: $grey;
+    @include font-raleway;
+    color: $white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px; 
+
+  &__heading {
+    @include font-satisfy-text;
+    color: $white;
+  }
+}

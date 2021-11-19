@@ -68,7 +68,7 @@ padding: 2.5em 1.5em 0;
 }
 
 .slide-menu__button:hover, .slide-menu__button:active {
-  background: $darkGreen;
+  background: $lightOlive;
   outline: none !important;
 }
 
@@ -82,7 +82,7 @@ padding: 2.5em 1.5em 0;
   margin: 22px;
 
   @media screen and (max-width: 450px) {
-    margin: 100px 12px 30px;
+    margin: 150px 12px 30px;
   }
 }
 .slide-menu__logo-text {

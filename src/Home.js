@@ -1,10 +1,8 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
 import { Helmet } from 'react-helmet';
-import * as FaIcons from "react-icons/fa";
-// import logo from './images/logo.png';
-// import logo2 from './images/logo2.png';
+import * as FaIcons from 'react-icons/fa';
 import heroImage from './images/homepage/hero-image.JPG';
 import heroImageCropped from './images/homepage/hero-image-cropped.jpg';
 import hayleyImage from './images/homepage/hayley.jpg';
