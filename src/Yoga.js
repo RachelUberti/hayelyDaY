@@ -26,6 +26,8 @@ import './scss/components/_offerings.scss';
 import './scss/components/_hero-image.scss';
 import './scss/components/_grid-gallery.scss';
 import './scss/components/_yoga.scss';
+import './scss/components/_socials.scss';
+
 
 // import SlideMenu from './SlideMenu';
 
@@ -194,30 +196,36 @@ function Yoga() {
                 <p>@hayleydanceandyoga</p>
               </a>
               <div className="socials__flex">
-                <img
-                  className="socials__image"
-                  src={yogaPose}
-                  alt="A person doing a yoga pose, leg stretch to the air in side plank"
-                />
-                <img
-                  className="socials__image"
-                  src={yogaGroup2}
-                  alt="A person instructing a yoga class"
-                />
-                <img
-                  className="socials__image"
-                  src={yogaHayley}
-                  alt="The top half of a person, hands in prayer position"
-                /><img
-                  className="socials__image"
-                  src={yogaOutside}
-                  alt="A group of people doing yoga outside with tree behind"
-                />
-                <img
-                  className="socials__image"
-                  src={yogaOneOnOne}
-                  alt="Two people doing a yoga pose in a studio"
-                />
+                <a href="/"
+                ><img
+                    className="socials__image"
+                    src={yogaPose}
+                    alt="A person doing a yoga pose, leg stretch to the air in side plank"
+                  /></a>
+                <a href="/"
+                ><img
+                    className="socials__image"
+                    src={yogaGroup2}
+                    alt="A person instructing a yoga class"
+                  /></a>
+                <a href="/"
+                ><img
+                    className="socials__image"
+                    src={yogaHayley}
+                    alt="The top half of a person, hands in prayer position"
+                  /></a>
+                <a href="/"
+                ><img
+                    className="socials__image"
+                    src={yogaOutside}
+                    alt="A group of people doing yoga outside with tree behind"
+                  /></a>
+                <a href="/"
+                ><img
+                    className="socials__image"
+                    src={yogaOneOnOne}
+                    alt="Two people doing a yoga pose in a studio"
+                  /></a>
               </div>
             </div>
           </div>
